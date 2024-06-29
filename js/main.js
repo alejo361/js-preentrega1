@@ -27,7 +27,7 @@ let mensajeFrigorias = '';
 let parar = false;
 
 do{
-    let ambiente = prompt('Ingrese el nombre del ambiente o 0 para termninar').trim();
+    let ambiente = prompt('Ingrese el nombre del ambiente o 0 para termninar');
     (ambiente == 0 || ambiente === null) ? parar = true : mensajeFrigorias = mensajeFrigorias + `Para ${ambiente} se necesita un AACC de ${ingresarM3(ambiente)} frigorias/hr. \n`;
 }while(!parar)
 
